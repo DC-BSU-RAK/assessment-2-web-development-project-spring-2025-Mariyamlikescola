@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Giving the whole page a dark background with a nice font that's easy to read */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0; 
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Styling the header area with a slightly lighter dark background, some padding, and rounded corners */
+  header {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Making the main title big and bold, with a dark red color to match the horror vibe */
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #e60000; 
+  }
+  
+  /* Styling the navigation menu so the links are aligned in a row and look nice */
+  nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center;
+    gap: 15px; 
+  }
+  
+  /* Styling the links to look clean and bold, with some padding and rounded edges for a friendly feel */
+  nav a {
+    text-decoration: none; 
+    color: #f0f0f0; 
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  nav a:hover {
+    background-color: #e60000;
+    color: #ffffff;
+  }
+  
+  /* Making the main content area centered that has some padding, with a darker background and rounded corners to make it cozy */
+  main {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Making the section titles stand out with a bright red color and bigger font */
+  main h2 {
+    color: #e60000;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  
+  /* Styling the paragraphs for readability, slightly bigger font, and enough space between lines */
+  main p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2c2c2c;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  footer p:hover {
+    color: #e60000;
+  }
