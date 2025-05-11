@@ -8,7 +8,7 @@
   /* Giving the whole page a dark background with a nice font that's easy to read */
   body {
   font-family: 'Arial', sans-serif;
-  background: url('https://i.pinimg.com/736x/04/2c/df/042cdfb1aebe5514fdd450d72274577b.jpg') no-repeat center center fixed;
+  background: url('../media/resident\ evil.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #f0f0f0;
   min-height: 100vh;
