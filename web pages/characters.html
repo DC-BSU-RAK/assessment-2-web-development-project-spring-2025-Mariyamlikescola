@@ -33,18 +33,26 @@
   <div class="main-title">
     <h1>CHARACTERS<br>OF<br>RESIDENT EVIL</h1>
   </div>
+<div style="height: 100vh;"></div>
+<div class="scroll-spacer"></div>
 
-  <div class="character" 
-         data-video=".mp4" 
-         data-img=".jpg" 
+<div class="characters-section"></div>
+  <div class="characters-container" >
+    <div class="character"
+         data-video="../media/leon kennedy.mp4" 
+         data-img="../media/leon 2.jpg" 
          data-name="Leon Kennedy" 
          data-info="Special agent with a sharp mind.">
       <!-- addung image of the character -->
-      <img src=".jpg" alt="Leon Kennedy" />
+      <img src="../media/leon 2.jpg" alt="Leon Kennedy" />
       <!-- Video element that plays when hovered -->
-      <video muted playsinline></video>
+      <video muted playsinline>
+        <source src="../media/leon kennedy.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
+</div>
+  </body>
 <script src="../js/characters.js"></script>
 </body>
 </html>
