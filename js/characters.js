@@ -31,4 +31,4 @@ document.querySelectorAll('.character').forEach(char => {
       video.currentTime = 0;
     }
   });
-});
+}); 
