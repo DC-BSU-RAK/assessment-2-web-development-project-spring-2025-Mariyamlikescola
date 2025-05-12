@@ -1,0 +1,93 @@
+/* styling the enitre pafe */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Styling the hero section with a dramatic background image */
+.hero-section {
+    background: url('../media/safe\ room.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #c8102e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Styling  the news section */
+.news {
+    padding: 3rem;
+    background-color: #202020;
+}
+
+.news h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling the highlights section */
+.highlights {
+    padding: 3rem;
+}
+
+.highlight-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling  for the media gallery */
+.gallery {
+    padding: 3rem;
+    background-color: #202020;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styling for the footer */
+footer {
+    padding: 1.5rem;
+    background-color: #111;
+    text-align: center;
+}
+
+footer a {
+    color: #c8102e;
+    text-decoration: none;
+}
