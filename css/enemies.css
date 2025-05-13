@@ -65,3 +65,86 @@
   font-size: 32px;
   z-index: 1;
 }
+/* Container for enemy cards, centered with margins and flexible layout with gaps */
+.enemy-container {
+  margin: 100px auto 50px;
+  width: 50%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Basic style for each enemy card, with semi-transparent dark background, padding, rounded corners, and border */
+.enemy-card {
+  background-color: rgba(20, 20, 20, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(125, 18, 18);
+  transition: background-color 0.3s ease;
+}
+
+.enemy-card:hover {
+  background-color: rgba(50, 0, 0, 0.9);
+}
+
+.media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Enemy images and videos are absolutely positioned to fill the container  */
+.enemy-image,
+.enemy-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  border-radius: 8px;
+}
+
+/* Video starts hidden with zero opacity, positioned above images for layering */
+.enemy-video {
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* adding hovering effect*/
+.media-wrapper:hover .enemy-video {
+  opacity: 1;
+}
+
+/* Fade out the image on hover to reveal the video underneath */
+.media-wrapper:hover .enemy-image {
+  opacity: 0;
+}
+
+/* Styling for enemy names */
+.enemy-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Description text for enemies */
+.enemy-description {
+  font-size: 16px;
+  line-height: 1.4;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* When the card has an active class,it expands the description to show content */
+.enemy-card.active .enemy-description {
+  max-height: 300px;
+}
