@@ -70,86 +70,89 @@
   height: 100vh;
   background: transparent;
 } 
-/* Container for enemy cards, centered with margins and flexible layout with gaps */
+/* Container for enemy cards */
 .enemy-container {
-  margin: 100px auto 50px;
-  width: 50%;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  z-index: 1;
-  position: relative;
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; 
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
 }
 
-/* Basic style for each enemy card, with semi-transparent dark background, padding, rounded corners, and border */
+/* Basic style for each enemy card */
 .enemy-card {
   background-color: rgba(20, 20, 20, 0.8);
   color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   border: 2px solid rgb(125, 18, 18);
-  transition: background-color 0.3s ease;
+  transition:transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .enemy-card:hover {
   background-color: rgba(50, 0, 0, 0.9);
+   transform: scale(1.03);
 }
 
 .media-wrapper {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 /* Enemy images and videos are absolutely positioned to fill the container  */
-.enemy-image,
-.enemy-video {
-  position: absolute;
+.enemy-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.5s ease;
-  border-radius: 8px;
+  display: block;
 }
 
 /* Video starts hidden with zero opacity, positioned above images for layering */
 .enemy-video {
-  opacity: 0;
-  z-index: 1;
-  pointer-events: none;
+ position: absolute;
+ top: 0%;
+ left:0%;
+ width: 100px;
+ height: 100px;
+ object-fit: cover;
+ display: none;
 }
 
 /* adding hovering effect*/
 .media-wrapper:hover .enemy-video {
-  opacity: 1;
+  display: none;
 }
 
 /* Fade out the image on hover to reveal the video underneath */
 .media-wrapper:hover .enemy-image {
-  opacity: 0;
+  display: block;
 }
 
 /* Styling for enemy names */
 .enemy-name {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 /* Description text for enemies */
 .enemy-description {
+  display: none;
+  margin-top: 10px;
   font-size: 16px;
-  line-height: 1.4;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+  line-height: 1.5;
 }
 
 /* When the card has an active class,it expands the description to show content */
 .enemy-card.active .enemy-description {
-  max-height: 300px;
+  display: block;
 }
