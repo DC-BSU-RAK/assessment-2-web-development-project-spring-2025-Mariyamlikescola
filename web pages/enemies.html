@@ -9,6 +9,7 @@
 <body>
 
   <!-- adding a background video that plays automatically and loops, creating a dynamic backdrop -->
+ <div class="hero-section">
   <video autoplay muted loop id="bg-video">
     <source src="../media/bg1.mp4" type="video/mp4" />
   </video>
@@ -33,6 +34,7 @@
   <div class="main-title">
     <h1>ENEMIES<br>IN<br>RESIDENT EVIL</h1>
   </div>
+ </div>
 
   <div class="scroll-spacer"></div>
 
@@ -82,7 +84,7 @@
 <!-- adding Alcina Dimitrescu -->
 <div class="enemy-card">
   <div class="media-wrapper">
-    <img src="../media/alcina.jpg" alt="Alcina Dimitrescu" class="enemy-image">
+    <img src="../media/lady.jpg" alt="Alcina Dimitrescu" class="enemy-image">
     <video class="enemy-video" muted loop>
       <source src=".mp4" type="video/mp4" />
     </video>
@@ -110,7 +112,7 @@
 <!-- adding Jack Baker -->
 <div class="enemy-card">
   <div class="media-wrapper">
-    <img src="../media/jack.jpg" alt="Jack Baker" class="enemy-image">
+    <img src="../media/jack1.jpg" alt="Jack Baker" class="enemy-image">
     <video class="enemy-video" muted loop>
       <source src=".mp4" type="video/mp4" />
     </video>
@@ -176,6 +178,24 @@
     A former U.S. agent turned mercenary, infected with Plaga and loyal to Saddler, known for his knife combat.
   </div>
 </div>
+<!-- Adding a YouTube Video Section -->
+<section class="youtube-section">
+  <h2 class="section-title">BEST BOSS FIGHTS!</h2>
+  <div class="video-container">
+    <!-- First video card -->
+    <div class="video-card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JC-6AadShEE?si=FIWnvLuJFivT9Dct" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- Second video card -->
+    <div class="video-card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Wh3nVbMr9Pg?si=oZVvNa9dl_BA9Cyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- Third video card -->
+    <div class="video-card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L7LRrf9dCv0?si=4vL_HoF2FKaAzNsT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 <script src="../js/enemies.js"></script>
 </body>
 </html>
