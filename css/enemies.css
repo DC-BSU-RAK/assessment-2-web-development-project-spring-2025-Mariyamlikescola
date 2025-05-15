@@ -168,82 +168,72 @@
 .enemy-card.active .enemy-description {
   display: block;
 }
-/* Styles for the YouTube Video Section, giving it a sleek dark background and centered layout */
-.youtube-section {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #111;
-  color: white;
-}
-
-/* The section title is big and bold, with a crimson color to grab attention */
-.section-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: crimson;
-  font-family: 'Times New Roman', serif;
-}
-
-/* Using Flexbox here helps line up the videos nicely in a row, with some space between them */
-.video-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-direction: row;
-  position: relative;
-}
-
-.video-card {
-  flex: 1;
-  max-width: 33%;
-  background-color: #222;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-/* The middle video is made more prominent by enlarging it and layering it above the side videos */
-.video-card.center {
-  z-index: 1;
-  flex: 2;
-}
-
-/* Making sure the embedded videos fill their containers nicely and look smooth with rounded edges */
-iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-/* For creating that triangle effect, the first and last videos are absolutely positioned and shifted downward */
-.video-container .video-card:first-child {
-  position: absolute;
-  left: 0;
-  transform: translateX(-50%) translateY(30px);
-}
-
-.video-container .video-card:last-child {
-  position: absolute;
-  right: 0;
-  transform: translateX(50%) translateY(30px);
-}
-
+/*Making a youtube section*/
 @media (max-width: 768px) {
   .video-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; 
+}
+}
+.video-card {
+  max-width: 300px; 
+  margin: 0 auto; /* centers individual cards if they are block elements */
+}
 
-  .video-card {
-    margin-bottom: 20px;
-    max-width: 100%;
-    position: relative; 
-  }
+/* styling the The toggle button */
+.toggle-btn {
+  background-color: rgb(83, 15, 29);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  /* Resetting the positioning on small screens so the triangle effect disappears for better layout */
-  .video-container .video-card:first-child,
-  .video-container .video-card:last-child {
-    position: relative;
-    transform: none;
-  }
+.toggle-btn:hover {
+  background-color: rgb(198, 31, 31);
+}
+
+/*styling the pafragraph*/
+.youtube-section p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+  color: #cec9c9;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+ .youtube-section {
+  background-image: url('../media/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px; 
+}
+/* stlyingthe caption beneath the video */
+.video-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #944848;
+  font-style: italic;
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+}
+/* Footer, simple and centered with a touch of color */
+footer {
+    padding: 1.5rem;
+    background-color: #bc1515; 
+    text-align: center;
+}
+
+footer a {
+    color: #9a9898;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; 
 }

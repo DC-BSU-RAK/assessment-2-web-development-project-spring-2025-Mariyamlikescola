@@ -54,7 +54,8 @@
     </div>
   </div>
 
-  <!-- Repeatingstructure for another enemy -->
+  <!-- Repeating
+   structure for another enemy -->
   <div class="enemy-card">
     <div class="media-wrapper">
       <img src="../media/mrx1.jpg.png" alt="Mr. X" class="enemy-image" />
@@ -178,24 +179,51 @@
     A former U.S. agent turned mercenary, infected with Plaga and loyal to Saddler, known for his knife combat.
   </div>
 </div>
-<!-- Adding a YouTube Video Section -->
+</div>
+<!-- Centered toggle button that lets users show or hide the gamers' reactions to Resident Evil moments -->
+<div style="text-align: center; margin: 40px 0;">
+  <button id="toggle-youtube-btn" class="toggle-btn">Show Gamers Reactions</button>
+</div>
+
+<!-- This container holds the reaction videos and is hidden by default -->
+<div id="youtube-section-container" style="display: none;">
+  <!-- Section where gamers react to iconic Resident Evil scenes -->
 <section class="youtube-section">
-  <h2 class="section-title">BEST BOSS FIGHTS!</h2>
+  <h2 class="section-title">Gamers React to Iconic Resident Evil Moments</h2>
+  <p>Check out these reactions from popular gamers as they experience some of the most intense and memorable scenes from Resident Evil. From heart-pounding chases to creepy characters, these videos capture all the excitement.</p>
+
   <div class="video-container">
-    <!-- First video card -->
     <div class="video-card">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/JC-6AadShEE?si=FIWnvLuJFivT9Dct" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/uQ2XK0qGvNw?si=EZKJdbFHTJKmRkLf"
+              title="Nemesis Chase Reaction"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+      <p class="video-caption">Nemesis Chase Reaction – Intense pursuit!</p>
     </div>
-    <!-- Second video card -->
+
     <div class="video-card">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Wh3nVbMr9Pg?si=oZVvNa9dl_BA9Cyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Wh3nVbMr9Pg?si=oZVvNa9dl_BA9Cyk"
+              title="Best Boss fight of Residnt evil game!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+      <p class="video-caption">Best Bosses – Tall and terrifying!</p>
     </div>
-    <!-- Third video card -->
+
     <div class="video-card">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/L7LRrf9dCv0?si=4vL_HoF2FKaAzNsT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/L7LRrf9dCv0?si=4vL_HoF2FKaAzNsT"
+              title="Top 20 HARDEST resident evil Bosses"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+      <p class="video-caption">20 scenes of terror – Unexpected horror!</p>
     </div>
   </div>
 </section>
 <script src="../js/enemies.js"></script>
+<footer>
+    <p>Stay stay informed! Follow us on <a href="https://twitter.com/residentevil">Twitter</a>.</p>
+  </footer>
 </body>
 </html>

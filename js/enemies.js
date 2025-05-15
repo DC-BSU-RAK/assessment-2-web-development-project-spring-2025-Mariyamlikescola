@@ -20,3 +20,19 @@ document.querySelectorAll('.enemy-video').forEach(video => {
     video.currentTime = 0; 
   });
 });
+
+// Toggle button for showing/hiding the YouTube reaction section
+const toggleBtn = document.getElementById('toggle-youtube-btn');
+const youtubeSection = document.getElementById('youtube-section-container');
+
+if (toggleBtn && youtubeSection) {
+  toggleBtn.addEventListener('click', () => {
+    if (youtubeSection.style.display === 'none') {
+      youtubeSection.style.display = 'block';
+      toggleBtn.textContent = 'Hide Gamers Reactions';
+    } else {
+      youtubeSection.style.display = 'none';
+      toggleBtn.textContent = 'Show Gamers Reactions';
+    }
+  });
+}
