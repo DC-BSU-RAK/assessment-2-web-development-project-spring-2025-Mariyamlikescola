@@ -1,0 +1,128 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #ff0000;
+}
+
+/* Style for each section */
+section {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #111, #222);
+  border-bottom: 2px solid #444;
+}
+
+section:nth-child(even) {
+  background: linear-gradient(135deg, #222, #111);
+}
+
+
+h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+/* styling Paragraphs and text content */
+p {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* styling the Images and videos */
+img, video {
+  max-width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+
+#timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+
+.milestone {
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 900px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.milestone:hover {
+  transform: scale(1.02);
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* styling the characters section  */
+#character-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.character {
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* addingg a hover effect for character cards */
+.character:hover {
+  transform: scale(1.05);
+}
+
+/* adding character images inside cards */
+.character img {
+  width: 100%;
+  display: block;
+}
+
+/* Detailing box for selected character */
+#character-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  display: none;
+}
+
+/* Showing class to display the details */
+#character-details.show {
+  display: block;
+}

@@ -232,7 +232,7 @@ html, body {
 }
 /* Footer, simple and centered with a touch of color */
 footer {
-    padding: 1.5rem;
+    padding: 1rcap;
     background-color: #a82a2a; 
     text-align: center;
 }
