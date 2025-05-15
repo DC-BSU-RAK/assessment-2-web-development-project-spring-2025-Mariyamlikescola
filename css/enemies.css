@@ -95,12 +95,12 @@
 
 /* Basic style for each enemy card */
 .enemy-card {
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 20px;
   border-radius: 12px;
   cursor: pointer;
-  border: 2px solid rgb(125, 18, 18);
+  border: 4px solid rgb(125, 18, 18);
   transition:transform 0.3s ease;
   overflow: hidden;
   position: relative;
@@ -225,7 +225,7 @@
 /* Footer, simple and centered with a touch of color */
 footer {
     padding: 1.5rem;
-    background-color: #bc1515; 
+    background-color: #a82a2a; 
     text-align: center;
 }
 
