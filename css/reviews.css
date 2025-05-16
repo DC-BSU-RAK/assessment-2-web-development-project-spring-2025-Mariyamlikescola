@@ -37,11 +37,11 @@
 
 /* Set the overall look of the page with a dark background and white text for readability */
 body {
-  background-image: url(https://i.pinimg.com/736x/99/1e/97/991e976cd272af4a417a4d93283524fc.jpg);
+  background-image: url(../media/bg7.jpg);
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 40px;
+  padding:0 40px 40px 40px;
 }
 
 /* Styling  the main containerh */
@@ -93,9 +93,43 @@ th {
   height: 100%;
   border-radius: 10px;
 }
+.review-form {
+  background-image: url(../media/button.jpg);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
 
-/* Styling for star type icons */
-.stars {
-  color: gold;
-  font-size: 18px;
+/* Slider styling*/
+.slider {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #380d0d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change button appearance on hover */
+.submit-btn:hover {
+  background-color: #430f0f;
+}
+
+/* Styling the individual reviews */
+#reviews > div {
+  border: 1px solid #9a2020;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }

@@ -42,3 +42,43 @@
       <tbody id="ratings-table"></tbody>
     </table>
   </div>
+<h2>Share Your Adventure!</h2>
+
+<!-- Adding a review Form for the users  -->
+<form id="simple-review-form" class="review-form">
+  <label>Your Name:</label><br>
+  <input type="text" id="name" placeholder="Your name" required class="input-field"><br>
+  
+  <label>Game:</label><br>
+  <select id="game" required class="input-field">
+    <option value="">Select a game</option>
+    <option>Resident Evil</option>
+    <option>Resident Evil 2</option>
+    <option>Resident Evil 3</option>
+    <option>Resident Evil 4</option>
+    <option>Resident Evil 5</option>
+    <option>Resident Evil 6</option>
+    <option>Resident Evil 7</option>
+    <option>Resident Evil 8</option>
+    <option>Resident Evil 4 remake</option>
+    <option>Resident Evil 2 remake</option>
+  </select><br>
+  
+  <label>Rating (1-5):</label><br>
+  <input type="range" id="rating" min="1" max="5" value="3" class="slider"><br>
+  
+  <div style="font-size:1.5em; margin-bottom:10px;">
+    Rating: <span id="emoji">😸</span>
+  </div>
+  
+  <label>Your Review:</label><br>
+  <textarea id="review" rows="3" placeholder="Write your opinions..." class="input-field" required></textarea><br>
+  
+  <button type="submit" class="submit-btn">Add Review</button>
+</form>
+
+<h3>Community Reviews:</h3>
+<div id="reviews"></div>
+  <script src="../js/reviews.js"></script>
+</body>
+</html>
