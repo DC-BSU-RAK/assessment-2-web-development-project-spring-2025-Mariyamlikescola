@@ -62,3 +62,63 @@ document.addEventListener("DOMContentLoaded", () => {
     timelineContainer.appendChild(clone);
   });
 });
+// adidng aList of classic horror games with details
+const classicHorrorGames = [
+  {
+    title: "Dead Space",
+    image: "../media/.jpg",
+    description: "Borrowed over-the-shoulder camera & horror pacing from RE4.",
+    video: "",
+    quote: "Resident Evil crawled so Dead Space could run."
+  },
+  {
+    title: "The Evil Within",
+    image: "../media/.jpg",
+    description: "Directed by Shinji Mikami, this game revives classic RE dread.",
+    video: "",
+    quote: "It's the modern Resident Evil 4 in disguise."
+  },
+  {
+    title: "Silent Hill",
+    image: "../media/",
+    description: "Inspired by RE's success, but focused more on psychological horror.",
+    video: "",
+    quote: "Without RE's survival horror success, SH wouldn't have existed."
+  },
+  {
+    title: "The Last of Us",
+    image: "../media/.jpg",
+    description: "Inherits RE's mix of emotional storytelling and tension.",
+    video: "",
+    quote: "Ellie and Joel are like the Leon and Claire of the apocalypse."
+  },
+  {
+    title: "Dino Crisis",
+    image: "../media/.jpg",
+    description: "Capcom’s other survival horror series using RE’s engine and ideas.",
+    video: "",
+    quote: "Resident Evil with dinosaurs — and it worked!"
+  }
+];
+
+// When the page is fully loaded, it cretaes cards
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("legacy-grid");
+  const template = document.getElementById("legacy-template");
+
+  // Looping through each game and creating a friendly card for it
+  classicHorrorGames.forEach(game => {
+    const gameCard = template.content.cloneNode(true);
+
+    // Filling in the image, title, description, video, and quote
+    gameCard.querySelector("img").src = game.image;
+    gameCard.querySelector("img").alt = game.title;
+    gameCard.querySelector("h4").textContent = game.title;
+    gameCard.querySelector(".desc").textContent = game.description;
+    gameCard.querySelector(".video").src = game.video;
+    gameCard.querySelector(".quote").textContent = game.quote;
+
+    // Adding our new game card to the page
+    container.appendChild(gameCard);
+  });
+});
