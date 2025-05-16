@@ -66,38 +66,31 @@ document.addEventListener("DOMContentLoaded", () => {
 const classicHorrorGames = [
   {
     title: "Dead Space",
-    image: "../media/.jpg",
+    image: "../media/dead.jpg",
     description: "Borrowed over-the-shoulder camera & horror pacing from RE4.",
-    video: "",
+    video: "https://www.youtube.com/embed/dkSlYGOEjEM?si=CMjfDEXfWwrwoFAE",
     quote: "Resident Evil crawled so Dead Space could run."
   },
   {
     title: "The Evil Within",
-    image: "../media/.jpg",
+    image: "../media/evil.jpg",
     description: "Directed by Shinji Mikami, this game revives classic RE dread.",
-    video: "",
+    video: "https://www.youtube.com/embed/mbBu75SSDAE?si=OJDYXmn7IQn_g8Ec",
     quote: "It's the modern Resident Evil 4 in disguise."
   },
   {
     title: "Silent Hill",
-    image: "../media/",
+    image: "../media/silent.jpg",
     description: "Inspired by RE's success, but focused more on psychological horror.",
-    video: "",
+    video:"https://www.youtube.com/embed/uoxG-DXSSac",
     quote: "Without RE's survival horror success, SH wouldn't have existed."
   },
   {
     title: "The Last of Us",
-    image: "../media/.jpg",
+    image: "../media/lastofus.jpg",
     description: "Inherits RE's mix of emotional storytelling and tension.",
-    video: "",
+    video: "https://www.youtube.com/embed/NpLoBc5PcQ4?si=xrvOvNYQiENE_vHb",
     quote: "Ellie and Joel are like the Leon and Claire of the apocalypse."
-  },
-  {
-    title: "Dino Crisis",
-    image: "../media/.jpg",
-    description: "Capcom’s other survival horror series using RE’s engine and ideas.",
-    video: "",
-    quote: "Resident Evil with dinosaurs — and it worked!"
   }
 ];
 
