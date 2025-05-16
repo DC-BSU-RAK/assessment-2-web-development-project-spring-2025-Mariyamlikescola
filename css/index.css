@@ -16,6 +16,43 @@
   overflow: hidden;
   position: relative;
 }
+/* Styling the navigation bar at the top of the page */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(57, 51, 51, 0.9);
+  padding: 2px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling for the logo image */
+.logo {
+  height: 50px;
+  margin-right: 120px;
+}
+
+/* Styling the list of navigation links horizontally */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+/* Styling each link in the navigation menu */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Highlighting the currently active page link */
+.nav-links li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+  
  /* Dark overlay to improve readability */
 .overlay {
   position: fixed;
@@ -43,37 +80,6 @@
     text-transform:uppercase;
   }
  
-  /* Styling the navigation menu so the links are aligned in a row and look nice */
-  nav ul {
-    list-style: none; 
-    display: flex; 
-    justify-content: center;
-    background-color: #111;
-    padding: 15px 0;
-    flex-wrap:wrap ;
-    gap:20px;
-
-  }
-  
-  nav li {
-  margin-right: 0 10px;
-}
-
-  /* Styling the links to look clean and bold, with some padding and rounded edges for a friendly feel */
-  nav a {
-    text-decoration: none; 
-    color: #f0f0f0; 
-    font-weight: normal;
-    font-size: 1em;
-    transition: color 0.3s;
-    padding: 5px 10px;
-  }
-  
-
-  nav a:hover {
-    color: #e60000;
-  }
-  
   /* Making the main content area centered that has some padding, with a darker background and rounded corners to make it cozy */
   main {
     max-width: 800px;
