@@ -41,6 +41,43 @@
   <h2>Iconic Characters & Their Roles</h2>
   <div id="character-section"></div>
   <div id="character-details"></div>
+  <h2>Milestones</h2>
+<!-- Data stored in HTML using a hidden template -->
+<template id="milestone-template">
+  <div class="milestone">
+    <h3></h3>
+    <p></p>
+    <img src="" alt="">
+  </div>
+</template>
+
+<h2>Characters</h2>
+<!-- Data stored in HTML using a hidden template -->
+<template id="character-template">
+  <div class="character">
+    <img src="" alt="">
+    <h4></h4>
+  </div>
+</template>
+<div id="character-section">
+  <div id="character-cards"></div>
+  <div id="character-details"></div>
+</div>
+
+<!-- Hidden data for milestones -->
+<div id="milestone-data" style="display: none;">
+  <div data-year="1996" data-title="Original Resident Evil" data-description="The one that started it all, bringing survival horror to gamers everywhere." image src ="../media/orgre.jpg"></div>
+  <div data-year="2002" data-title="Remake for GameCube" data-description="A complete overhaul with better graphics and smoother gameplay." image src="../media/gamecube.jpg"></div>
+  <div data-year="2017" data-title="Resident Evil 7" data-description="A terrifying first-person journey that changed how horror games are played." image src="../media/re78.jpg"></div>
+</div>
+
+<!-- Hidden data for characters -->
+<div id="character-data" style="display: none;">
+  <div data-name="Chris Redfield" data-role="Main hero in the first game, leading efforts against bioweapons." data-bio="A tough veteran from S.T.A.R.S., fighting bioweapons and helping to stop outbreaks." image src="../media/chris.jpg"></div>
+  <div data-name="Jill Valentine" data-role="One of the original S.T.A.R.S. members, fighting evil and uncovering the truth." data-bio="An expert in tactical combat and uncovering secrets about the Umbrella Corporation." image src="../media/jill.jpg"></div>
+  <div data-name="Albert Wesker" data-role="The main antagonist whose actions changed everything." data-bio="Once a hero, now a villain, Wesker’s obsession with bioweapons has caused chaos." image src="../media/albert.jpg"></div>
+  <div data-name="Ethan Winters" data-role="Represents how ordinary people get caught up in extraordinary horror." data-bio="A regular guy thrown into a nightmare, fighting to survive from Resident Evil 7 onwards." image src="../media/ethan.jpg"></div>
+</div>
 </section>
 
 <section id="gameplay">
