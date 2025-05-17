@@ -1,0 +1,43 @@
+/* Resettting some default styles to have a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the navigation bar at the top of the page */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(57, 51, 51, 0.9);
+  padding: 2px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling for the logo image */
+.logo {
+  height: 50px;
+  margin-right: 120px;
+}
+
+/* Styling the list of navigation links horizontally */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+/* Styling each link in the navigation menu */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Highlighting the currently active page link */
+.nav-links li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
