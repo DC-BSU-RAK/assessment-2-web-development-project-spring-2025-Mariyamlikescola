@@ -32,4 +32,29 @@
   <div class="main-title">
     <h1>WHICH<BR> RESIDENT EVIL<br>CHARACTER ARE YOU?</h1>
   </div>
-  
+  <div class="scroll-spacer"></div>
+  <!-- Quiz container -->
+   <div id="quizForm" class="quiz-container">
+    <div id="intro">
+      <h1>Resident Evil Character Quiz</h1>
+      <p>Answer these questions to discover your RE counterpart.</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display: none;">
+      <div id="questionText" class="question"></div>
+      <div id="options" class="options"></div>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2 id="characterName"></h2>
+      <img id="characterImg" src="" alt="Character Image" />
+      <p id="characterDesc"></p>
+      <button class="start-btn" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <div id="confetti" class="confetti"></div>
+  </div>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
