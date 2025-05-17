@@ -166,10 +166,10 @@ footer {
 }
 /* Styling individual info cards */
 .info-card {
-  background-color: rgba(44, 44, 44, 0.9);
+  background-image: url(../media/bg7.jpg);
   padding: 25px;
   border-radius: 12px;
-  border: 2px solid #e60000;
+  border: 2px solid #601c1c;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   color: #f0f0f0;
   flex: 1 1 300px;
@@ -183,7 +183,7 @@ footer {
 }
 /* Styleing  headings within info cards */
 .info-card h2 {
-  color: #e60000;
+  color: #7e7878;
   margin-bottom: 15px;
   font-size: 1.6em;
   text-align: center;
