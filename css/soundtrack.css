@@ -41,3 +41,123 @@
   font-weight: bold;
   text-decoration: underline;
 }
+/* using  Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Galactic&display=swap');
+
+header {
+ background-image: url(../media/safe\ room.jpg);
+  padding: 1.8em;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Galactic', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px #631616, 0 0 20px #ff006e;
+}
+
+.fact {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0 0 5px #631616, 0 0 10px #ff69b4;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2em;
+  padding: 2em;
+}
+
+.music-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 1em;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff0000, 0 0 40px #000000;
+}
+
+.music-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #ffe600;
+  box-shadow: 0 0 10px #ffe600;
+}
+
+.music-card h3 {
+  margin: 0.75em 0 0.5em 0;
+  font-family: 'Galactic', sans-serif;
+  font-size: 1.3em;
+  color: #ffe600;
+}
+
+audio {
+  width: 100%;
+  margin-top: 0.75em;
+  outline: none;
+  border-radius: 10px;
+  background: #222;
+}
+
+.mystery-button {
+  margin: 2em auto;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  background: linear-gradient(45deg, #511515, #716868);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Galactic', sans-serif;
+  box-shadow: 0 0 15px #5f1b0f, 0 0 30px #7d1515;
+  transition: all 0.3s;
+  display: block;
+}
+
+.mystery-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #4c1212, 0 0 50px #721919;
+}
+
+/* styling animated floating particles for mystical effect */
+.particles {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  background: #ffe600;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatUp 20s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100%) scale(0.5); opacity: 0.3; }
+  50% { opacity: 0.7; }
+  100% { transform: translateY(-100%) scale(1); opacity: 0; }
+}
