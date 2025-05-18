@@ -213,3 +213,63 @@ footer a {
 footer a:hover {
     text-decoration: underline; 
 }
+/*styling the chatting box*/
+.custom-chat {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  color: #fff;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px #e60000;
+}
+
+.custom-chat h3 {
+  color: #e60000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#chatForm input, #chatForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #431717;
+  border-radius: 5px;
+}
+
+#chatForm button {
+  background: #411010;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chatForm button:hover {
+  background: #b30000;
+}
+
+#chatBox {
+  margin-top: 20px;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.chat-message strong {
+  color: #e60000;
+}

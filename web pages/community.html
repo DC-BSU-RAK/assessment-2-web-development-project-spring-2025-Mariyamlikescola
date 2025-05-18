@@ -67,12 +67,6 @@
   </div>
 </section>
 
-<!-- Joining the Conversation -->
-<section class="forum">
-  <h2>Come Chat With Us</h2>
-  <p>Share your tips, favorite moments, or ask questions — we're all here to help and connect!</p>
-</section>
-
 <!-- Media Showcase -->
 <section class="media-gallery">
   <h2>Media Highlights</h2>
@@ -91,8 +85,22 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/By-TH0Am-1E?si=pzCk2nznBotLnQYg" title="Epic Resident Evil 4 Remake Gameplay Trailer Reaction Mashup | Unleashing Thrills and Chills!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </section>
+<section class="forum">
+  <h2>Come Chat With Us</h2>
+  <p>Share your tips, favorite moments, or ask questions — we're all here to help and connect!</p>
+  <div class="custom-chat">
+  <h3>Community Chat</h3>
+  <form id="chatForm">
+    <input type="text" id="username" placeholder="Your name" required />
+    <textarea id="message" placeholder="Say something..." required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div id="chatBox"></div>
+</div>
 
+</section>
 <!-- Adding a footer -->
 <footer>
   <p>Stay in the loop! Follow us on <a href="https://twitter.com/residentevil">Twitter</a>.</p>
 </footer>
+<script src="../js/community.js"></script>
