@@ -37,6 +37,16 @@ const questions = [
     ],
   },
   {
+        text: "Choose a partner:",
+        options: [
+          { text: "Ada Wong", character: "Leon Kennedy" },
+          { text: "Barry Burton", character: "Jill Valentine" },
+          { text: "Sheva Alomar", character: "Chris Redfield" },
+          { text: "Sherry Birkin", character: "Claire Redfield" }
+        ],
+      },
+
+  {
     text: "Your ideal environment is:",
     options: [
       { text: "Urban city", value: "urban" },
@@ -66,7 +76,7 @@ const characters = [
     name: "Ada Wong",
     description: "Mysterious, cunning, and independent. Always working her own agenda.",
     image: "https://i.pinimg.com/736x/95/5e/c1/955ec1985ce469894f1c2a537366236b.jpg",
-    traits: ["cunning", "stealthy"]
+    traits: ["cunning", "stealth"]
   },
   {
     name: "Chris Redfield",
@@ -84,7 +94,7 @@ const characters = [
     name: "HUNK",
     description: "Silent, deadly, and highly skilled operative. The legendary soldier.",
     image: "https://i.pinimg.com/736x/51/23/27/5123278f59c98d540cb013e4e60daa57.jpg",
-    traits: ["brave", "stealthy"]
+    traits: ["brave", "stealth"]
   },
   {
     name: "Uroboros",
